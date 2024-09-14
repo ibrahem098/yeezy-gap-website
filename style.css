@@ -1,0 +1,435 @@
+/* <!-- HERO SECTION --> */
+.headimg {
+    background-image: url(media/hero.jpg);
+    background-size: 1440px 717px;
+    width: 100vw;
+    height: 100vh;
+    margin: -8px;
+    text-align: right;
+
+}
+
+.us {
+    width: 15px;
+    height: 15;
+    margin-right: -460px;
+}
+
+a {
+    /* text-align: center; */
+    font-family: SF Pro, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+}
+
+.nav1 {
+    padding-top: 41px;
+    display: inline-block;
+    padding-right: 11.7%;
+}
+
+.search {
+    padding-right: 68px;
+    padding-left: 68px;
+    ;
+}
+
+.nav2 a {
+    padding-top: 41px;
+    display: block;
+    text-align: left;
+    padding-left: 45px;
+}
+
+.unisex,
+.men,
+.women {
+    margin-top: -36px;
+}
+
+/*  */
+
+/*               <!-- PRODUCT CARD -->               */
+/* Layout */
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6,
+.row7,
+.row8,
+.row9,
+.row10 {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.row1 {
+
+    padding-top: 7.5%;
+
+}
+
+/* photos */
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic7,
+.pic8,
+.pic9,
+.pic10,
+.pic11,
+.pic12,
+.pic13,
+.pic14,
+.pic15,
+.pic16,
+.pic17,
+.pic18,
+.pic19,
+.pic20,
+.pic21,
+.pic22,
+.pic23,
+.pic24,
+.pic25,
+.pic26,
+.pic27,
+.pic28 {
+    width: 370px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 370px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+.pic1:hover,
+.pic2:hover,
+.pic3:hover,
+.pic4:hover,
+.pic5:hover,
+.pic6:hover,
+.pic7:hover,
+.pic8:hover,
+.pic9:hover,
+.pic10:hover,
+.pic11:hover,
+.pic12:hover,
+.pic13:hover,
+.pic14:hover,
+.pic15:hover,
+.pic16:hover,
+.pic17:hover,
+.pic18:hover,
+.pic19:hover,
+.pic20:hover,
+.pic21:hover,
+.pic22:hover,
+.pic23:hover,
+.pic24:hover,
+.pic25:hover,
+.pic26:hover,
+.pic27:hover,
+.pic28:hover {
+    transition: all .2s ease;
+}
+
+
+
+.pic1 {
+    background-image: url(media/items/1a.jpg);
+}
+
+.pic1:hover {
+    background-image: url('media/items/1b.jpg');
+}
+
+.pic2 {
+    background-image: url(media/items/2a.jpg);
+}
+
+.pic2:hover {
+    background-image: url('media/items/2b.jpg');
+}
+
+.pic3 {
+    background-image: url(media/items/3a.jpg);
+}
+
+.pic3:hover {
+    background-image: url('media/items/3b.jpg');
+}
+
+.pic4 {
+    background-image: url(media/items/4a.jpg);
+}
+
+.pic4:hover {
+    background-image: url('media/items/4b.jpg');
+}
+
+.pic5 {
+    background-image: url(media/items/5a.jpg);
+}
+
+.pic5:hover {
+    background-image: url('media/items/5b.jpg');
+}
+
+.pic6 {
+    background-image: url(media/items/6a.jpg);
+}
+
+.pic6:hover {
+    background-image: url('media/items/6b.jpg');
+}
+
+.pic7 {
+    background-image: url(media/items/7a.jpg);
+}
+
+.pic7:hover {
+    background-image: url('media/items/7b.jpg');
+}
+
+.pic8 {
+    background-image: url(media/items/8a.jpg);
+}
+
+.pic8:hover {
+    background-image: url('media/items/8b.jpg');
+}
+
+.pic9 {
+    background-image: url(media/items/9a.jpg);
+}
+
+.pic9:hover {
+    background-image: url('media/items/9b.jpg');
+}
+
+.pic10 {
+    background-image: url(media/items/10a.jpg);
+}
+
+.pic10:hover {
+    background-image: url('media/items/10b.jpg');
+}
+
+.pic11 {
+    background-image: url(media/items/11a.jpg);
+}
+
+.pic11:hover {
+    background-image: url('media/items/11b.jpg');
+}
+
+.pic12 {
+    background-image: url(media/items/12a.jpg);
+}
+
+.pic12:hover {
+    background-image: url('media/items/12b.jpg');
+}
+
+.pic13 {
+    background-image: url(media/items/13a.jpg);
+}
+
+.pic13:hover {
+    background-image: url('media/items/13b.jpg');
+
+
+}
+
+.pic14 {
+    background-image: url(media/items/14a.jpg);
+}
+
+.pic14:hover {
+    background-image: url('media/items/14b.jpg');
+}
+
+.pic15 {
+    background-image: url(media/items/15a.jpg);
+}
+
+.pic15:hover {
+    background-image: url('media/items/15b.jpg');
+}
+
+.pic16 {
+    background-image: url(media/items/16a.jpg);
+}
+
+.pic16:hover {
+    background-image: url('media/items/16b.jpg');
+}
+
+.pic17 {
+    background-image: url(media/items/17a.jpg);
+}
+
+.pic17:hover {
+    background-image: url('media/items/17b.jpg');
+}
+
+.pic18 {
+    background-image: url(media/items/18a.jpg);
+}
+
+.pic18:hover {
+    background-image: url('media/items/18b.jpg');
+}
+
+.pic19 {
+    background-image: url(media/items/19a.jpg);
+}
+
+.pic19:hover {
+    background-image: url('media/items/19b.jpg');
+}
+
+.pic20 {
+    background-image: url(media/items/20a.jpg);
+}
+
+.pic20:hover {
+    background-image: url('media/items/20b.jpg');
+}
+
+.pic21 {
+    background-image: url(media/items/21a.jpg);
+}
+
+.pic21:hover {
+    background-image: url('media/items/21b.jpg');
+
+
+}
+
+.pic22 {
+    background-image: url(media/items/22a.jpg);
+}
+
+.pic22:hover {
+    background-image: url('media/items/22b.jpg');
+}
+
+.pic23 {
+    background-image: url(media/items/23a.jpg);
+}
+
+.pic23:hover {
+    background-image: url('media/items/23b.jpg');
+}
+
+.pic24 {
+    background-image: url(media/items/24a.jpg);
+}
+
+.pic24:hover {
+    background-image: url('media/items/24b.jpg');
+}
+
+.pic25 {
+    background-image: url(media/items/25a.jpg);
+}
+
+.pic25:hover {
+    background-image: url('media/items/25b.jpg');
+}
+
+.pic26 {
+    background-image: url(media/items/26a.jpg);
+}
+
+.pic26:hover {
+    background-image: url('media/items/26b.jpg');
+}
+
+.pic27 {
+    background-image: url(media/items/27a.jpg);
+}
+
+.pic27:hover {
+    background-image: url('media/items/27b.jpg');
+}
+
+.pic28 {
+    background-image: url(media/items/28a.jpg);
+}
+
+.pic28:hover {
+    background-image: url('media/items/28b.jpg');
+}
+
+/* Text */
+p {
+    text-align: center;
+}
+
+.p_name,
+.p_color,
+.p_price {
+    text-align: center;
+    font-family: 'SF Pro', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.p_color {
+    opacity: .35;
+    font-size: 12px;
+}
+
+.p_price {
+    margin-top: -10px;
+}
+
+/*  */
+
+/* Footer */
+.footer {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    text-align: center;
+    line-height: 1;
+
+}
+
+.b_link {
+    display: inline;
+    font-family: "SF Pro", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.copy {
+    display: inline;
+    font-family: "SF Pro", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 10px;
+}
+
+/*  */
