@@ -1,11 +1,17 @@
-/* <!-- HERO SECTION --> */
+* {
+    font-family: 'SF Pro', Helvetica, Arial, sans-serif;
+
+}
+
 .headimg {
     background-image: url(media/hero.jpg);
-    background-size: 1440px 717px;
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     margin: -8px;
     text-align: right;
+    padding-bottom: 7.5%;
 
 }
 
@@ -16,7 +22,6 @@
 }
 
 a {
-    /* text-align: center; */
     font-family: SF Pro, Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -59,57 +64,64 @@ a {
 
 /*               <!-- PRODUCT CARD -->               */
 /* Layout */
-.row1,
-.row2,
-.row3,
-.row4,
-.row5,
-.row6,
-.row7,
-.row8,
-.row9,
-.row10 {
-    display: flex;
-    width: fit-content;
-    margin: auto;
+.productsGrid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 0px 150px;
+}
+
+.product {
     padding-bottom: 70px;
 }
 
-.row1 {
+.p_name,
+.p_color,
+.p_price {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
 
-    padding-top: 7.5%;
+
+.p_color {
+    opacity: .35;
+    font-size: 12px;
+}
+
+.p_price {
+    margin-top: -10px;
+}
+
+/*  */
+
+/* Footer */
+.footer {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    text-align: center;
+    line-height: 1;
 
 }
 
+.b_link {
+    display: inline;
+    font-family: "SF Pro", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.copy {
+    display: inline;
+    font-family: "SF Pro", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 10px;
+}
+
 /* photos */
-.pic1,
-.pic2,
-.pic3,
-.pic4,
-.pic5,
-.pic6,
-.pic7,
-.pic8,
-.pic9,
-.pic10,
-.pic11,
-.pic12,
-.pic13,
-.pic14,
-.pic15,
-.pic16,
-.pic17,
-.pic18,
-.pic19,
-.pic20,
-.pic21,
-.pic22,
-.pic23,
-.pic24,
-.pic25,
-.pic26,
-.pic27,
-.pic28 {
+.pic {
     width: 370px;
     height: 370px;
     margin-left: auto;
@@ -119,34 +131,7 @@ a {
     margin-bottom: 35px;
 }
 
-.pic1:hover,
-.pic2:hover,
-.pic3:hover,
-.pic4:hover,
-.pic5:hover,
-.pic6:hover,
-.pic7:hover,
-.pic8:hover,
-.pic9:hover,
-.pic10:hover,
-.pic11:hover,
-.pic12:hover,
-.pic13:hover,
-.pic14:hover,
-.pic15:hover,
-.pic16:hover,
-.pic17:hover,
-.pic18:hover,
-.pic19:hover,
-.pic20:hover,
-.pic21:hover,
-.pic22:hover,
-.pic23:hover,
-.pic24:hover,
-.pic25:hover,
-.pic26:hover,
-.pic27:hover,
-.pic28:hover {
+.pic:hover {
     transition: all .2s ease;
 }
 
@@ -379,57 +364,3 @@ a {
 .pic28:hover {
     background-image: url('media/items/28b.jpg');
 }
-
-/* Text */
-p {
-    text-align: center;
-}
-
-.p_name,
-.p_color,
-.p_price {
-    text-align: center;
-    font-family: 'SF Pro', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-
-.p_color {
-    opacity: .35;
-    font-size: 12px;
-}
-
-.p_price {
-    margin-top: -10px;
-}
-
-/*  */
-
-/* Footer */
-.footer {
-    padding-top: 90px;
-    padding-bottom: 150px;
-    text-align: center;
-    line-height: 1;
-
-}
-
-.b_link {
-    display: inline;
-    font-family: "SF Pro", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.copy {
-    display: inline;
-    font-family: "SF Pro", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    margin: 10px;
-}
-
-/*  */
