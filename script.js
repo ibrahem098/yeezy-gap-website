@@ -12,7 +12,7 @@ products.forEach((product) => {
 
     html += `
     <div class="product">
-    <img class="pic" src="media/items/${picCount}a.jpg"></img>
+    <img class="pic pic${picCount}" src="media/items/${picCount}a.jpg" onmouseover="this.src='media/items/${picCount}b.jpg'" onmouseout="this.src='media/items/${picCount}a.jpg'">
     <p class="p_name">${productName}</p>
     <p class="p_price">$${productPriceCents/100}</p>
     <p class="p_color">${productcolors} COLORS</p>
@@ -20,19 +20,3 @@ products.forEach((product) => {
     `;
     document.querySelector('.productsGrid').innerHTML = html
 })
-
-// background-image: url(media/items/1a.jpg);
-{
-    /* <div class="pic${picCount} pic"></div> */
-}
-
-document.querySelectorAll('.pic').forEach((pic) => {
-    pic.addEventListener(onmouse)
-})
-
-/* <div>
-<div class="pic1"></div>
-<p class="p_name">SATEEN CARGO PANT</p>
-<p class="p_price">$220</p>
-<p class="p_color">2 COLORS</p>
-</div> */

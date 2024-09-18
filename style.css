@@ -3,6 +3,10 @@
 
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .headimg {
     background-image: url(media/hero.jpg);
     background-size: 100%;
@@ -60,18 +64,26 @@ a {
     margin-top: -36px;
 }
 
-/*  */
-
-/*               <!-- PRODUCT CARD -->               */
-/* Layout */
 .productsGrid {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    display: flex;
     padding: 0px 150px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+
+/* .productsGrid {
+    display: flex;
+    padding: 0px 150px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-y: scroll;
+    scrollbar-width: none; }
+    */
+
 
 .product {
     padding-bottom: 70px;
+    width: 33.3%;
 }
 
 .p_name,
@@ -92,9 +104,6 @@ a {
     margin-top: -10px;
 }
 
-/*  */
-
-/* Footer */
 .footer {
     padding-top: 90px;
     padding-bottom: 150px;
@@ -120,7 +129,6 @@ a {
     margin: 10px;
 }
 
-/* photos */
 .pic {
     width: 370px;
     height: 370px;
@@ -129,238 +137,4 @@ a {
     background-size: 370px;
     cursor: pointer;
     margin-bottom: 35px;
-}
-
-.pic:hover {
-    transition: all .2s ease;
-}
-
-
-
-.pic1 {
-    background-image: url(media/items/1a.jpg);
-}
-
-.pic1:hover {
-    background-image: url('media/items/1b.jpg');
-}
-
-.pic2 {
-    background-image: url(media/items/2a.jpg);
-}
-
-.pic2:hover {
-    background-image: url('media/items/2b.jpg');
-}
-
-.pic3 {
-    background-image: url(media/items/3a.jpg);
-}
-
-.pic3:hover {
-    background-image: url('media/items/3b.jpg');
-}
-
-.pic4 {
-    background-image: url(media/items/4a.jpg);
-}
-
-.pic4:hover {
-    background-image: url('media/items/4b.jpg');
-}
-
-.pic5 {
-    background-image: url(media/items/5a.jpg);
-}
-
-.pic5:hover {
-    background-image: url('media/items/5b.jpg');
-}
-
-.pic6 {
-    background-image: url(media/items/6a.jpg);
-}
-
-.pic6:hover {
-    background-image: url('media/items/6b.jpg');
-}
-
-.pic7 {
-    background-image: url(media/items/7a.jpg);
-}
-
-.pic7:hover {
-    background-image: url('media/items/7b.jpg');
-}
-
-.pic8 {
-    background-image: url(media/items/8a.jpg);
-}
-
-.pic8:hover {
-    background-image: url('media/items/8b.jpg');
-}
-
-.pic9 {
-    background-image: url(media/items/9a.jpg);
-}
-
-.pic9:hover {
-    background-image: url('media/items/9b.jpg');
-}
-
-.pic10 {
-    background-image: url(media/items/10a.jpg);
-}
-
-.pic10:hover {
-    background-image: url('media/items/10b.jpg');
-}
-
-.pic11 {
-    background-image: url(media/items/11a.jpg);
-}
-
-.pic11:hover {
-    background-image: url('media/items/11b.jpg');
-}
-
-.pic12 {
-    background-image: url(media/items/12a.jpg);
-}
-
-.pic12:hover {
-    background-image: url('media/items/12b.jpg');
-}
-
-.pic13 {
-    background-image: url(media/items/13a.jpg);
-}
-
-.pic13:hover {
-    background-image: url('media/items/13b.jpg');
-
-
-}
-
-.pic14 {
-    background-image: url(media/items/14a.jpg);
-}
-
-.pic14:hover {
-    background-image: url('media/items/14b.jpg');
-}
-
-.pic15 {
-    background-image: url(media/items/15a.jpg);
-}
-
-.pic15:hover {
-    background-image: url('media/items/15b.jpg');
-}
-
-.pic16 {
-    background-image: url(media/items/16a.jpg);
-}
-
-.pic16:hover {
-    background-image: url('media/items/16b.jpg');
-}
-
-.pic17 {
-    background-image: url(media/items/17a.jpg);
-}
-
-.pic17:hover {
-    background-image: url('media/items/17b.jpg');
-}
-
-.pic18 {
-    background-image: url(media/items/18a.jpg);
-}
-
-.pic18:hover {
-    background-image: url('media/items/18b.jpg');
-}
-
-.pic19 {
-    background-image: url(media/items/19a.jpg);
-}
-
-.pic19:hover {
-    background-image: url('media/items/19b.jpg');
-}
-
-.pic20 {
-    background-image: url(media/items/20a.jpg);
-}
-
-.pic20:hover {
-    background-image: url('media/items/20b.jpg');
-}
-
-.pic21 {
-    background-image: url(media/items/21a.jpg);
-}
-
-.pic21:hover {
-    background-image: url('media/items/21b.jpg');
-
-
-}
-
-.pic22 {
-    background-image: url(media/items/22a.jpg);
-}
-
-.pic22:hover {
-    background-image: url('media/items/22b.jpg');
-}
-
-.pic23 {
-    background-image: url(media/items/23a.jpg);
-}
-
-.pic23:hover {
-    background-image: url('media/items/23b.jpg');
-}
-
-.pic24 {
-    background-image: url(media/items/24a.jpg);
-}
-
-.pic24:hover {
-    background-image: url('media/items/24b.jpg');
-}
-
-.pic25 {
-    background-image: url(media/items/25a.jpg);
-}
-
-.pic25:hover {
-    background-image: url('media/items/25b.jpg');
-}
-
-.pic26 {
-    background-image: url(media/items/26a.jpg);
-}
-
-.pic26:hover {
-    background-image: url('media/items/26b.jpg');
-}
-
-.pic27 {
-    background-image: url(media/items/27a.jpg);
-}
-
-.pic27:hover {
-    background-image: url('media/items/27b.jpg');
-}
-
-.pic28 {
-    background-image: url(media/items/28a.jpg);
-}
-
-.pic28:hover {
-    background-image: url('media/items/28b.jpg');
 }
