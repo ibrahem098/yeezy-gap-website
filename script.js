@@ -20,3 +20,13 @@ products.forEach((product) => {
     `;
     document.querySelector('.productsGrid').innerHTML = html
 })
+let heroimgNum = 0
+
+function generateeaderImg() {
+    heroimgNum = Math.round(Math.random() * 16)
+    if (heroimgNum === 0) {
+        generateeaderImg()
+    }
+    document.querySelector('.headimg').style.backgroundImage = `url('media/heroimg/hero${heroimgNum}.jpg')`;
+}
+generateeaderImg()
