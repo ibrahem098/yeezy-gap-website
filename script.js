@@ -1,5 +1,3 @@
-console.log('yes');
-
 import {
     products
 } from "./proudcts.js"
@@ -15,27 +13,6 @@ function generateHeaderImg() {
     document.querySelector('.headimg').style.backgroundImage = `url('./media/heroimg/hero${heroimgNum}.jpg')`;
 }
 
-function generateProducts() {
-    products.forEach((product) => {
-        let productName = product.name,
-            productPriceCents = product.priceCents,
-            productcolors = product.colors,
-            productpic = product.pic
-        picCount++
-
-        html += `
-        <div class="product">
-        <img id="pic" class="pic pic${picCount}" src="./media/items/${picCount}a.jpg" onmouseover="this.src='./media/items/${picCount}b.jpg'" onmouseout="this.src='./media/items/${picCount}a.jpg'">
-        <p class="p_name">${productName}</p>
-        <p class="p_price">$${productPriceCents/100}</p>
-        <p class="p_color">${productcolors} COLORS</p>
-        </div>
-        `;
-        document.querySelector('.productsGrid').innerHTML = html
-    })
-}
-generateHeaderImg()
-generateProducts()
 
 let scrollViewToggel = document.querySelector('.gridIcon');
 let grid = document.getElementById('productsGrid');
@@ -57,4 +34,40 @@ document.querySelector('.men').addEventListener('click', () => {
 })
 document.querySelector('.women').addEventListener('click', () => {
     document.querySelector('.womenCats').classList.toggle('hidden')
+})
+
+
+
+function generateProducts(array) {
+    array.forEach((product) => {
+        let productName = product.name,
+            productPriceCents = product.priceCents,
+            productcolors = product.colors,
+            productpic = product.pic
+
+        html += `
+        <div class="product">
+        <img id="pic" class="pic" src="./media/items/${productpic}a.jpg" onmouseover="this.src='./media/items/${productpic}b.jpg'" onmouseout="this.src='./media/items/${productpic}a.jpg'">
+        <p class="p_name">${productName}</p>
+        <p class="p_price">$${productPriceCents/100}</p>
+        <p class="p_color">${productcolors} COLORS</p>
+        </div>
+        `;
+        document.querySelector('.productsGrid').innerHTML = html
+    })
+}
+generateHeaderImg()
+generateProducts(products)
+let onscreenProducts = [];
+
+document.querySelector('.uAll').addEventListener('click', () => {
+    products.forEach((product) => {
+        if (product.gender === 'unisex') {
+            console.log(product.name);
+            onscreenProducts.push(product)
+            console.log(onscreenProducts);
+        }
+    })
+    document.querySelector('.productsGrid').innerHTML = ``
+    generateProducts(onscreenProducts)
 })

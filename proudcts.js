@@ -1,7 +1,7 @@
 export let products = [{
         id: 1,
         category: 'Bottoms',
-        gender: '',
+        gender: 'unisex',
         name: 'SATEEN CARGO PANT',
         priceCents: 22000,
         colors: 2,
@@ -9,7 +9,7 @@ export let products = [{
     }, {
         id: 2,
         category: 'Accessories',
-        gender: '',
+        gender: 'unisex',
         name: 'KEYCHAIN',
         priceCents: 4000,
         colors: 1,
@@ -17,8 +17,8 @@ export let products = [{
     },
     {
         id: 3,
-        category: '',
-        gender: '',
+        category: 'Outerwear',
+        gender: 'unisex',
         name: 'SATEEN ANORAK',
         priceCents: 26000,
         colors: 2,
@@ -27,7 +27,7 @@ export let products = [{
     {
         id: 4,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'DOVE HOODIE',
         priceCents: 24000,
         colors: 5,
@@ -36,7 +36,7 @@ export let products = [{
     {
         id: 5,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'DOVE LONGSLEEVE TEE',
         priceCents: 14000,
         colors: 5,
@@ -45,7 +45,7 @@ export let products = [{
     {
         id: 6,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'LOOSE TANK TOP',
         priceCents: 8000,
         colors: 2,
@@ -54,7 +54,7 @@ export let products = [{
     {
         id: 7,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'DOVE 3/4 SLEEVE TEE',
         priceCents: 14000,
         colors: 5,
@@ -63,7 +63,7 @@ export let products = [{
     {
         id: 8,
         category: 'Accessories',
-        gender: '',
+        gender: 'unisex',
         name: 'SNAKE BAG',
         priceCents: 14000,
         colors: 1,
@@ -72,7 +72,7 @@ export let products = [{
     {
         id: 9,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'LOGO NO SEAM TEE',
         priceCents: 12000,
         colors: 3,
@@ -81,7 +81,7 @@ export let products = [{
     {
         id: 10,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'LOGO LONGSLEEVE TEE',
         priceCents: 12000,
         colors: 4,
@@ -90,7 +90,7 @@ export let products = [{
     {
         id: 11,
         category: 'Tops',
-        gender: '',
+        gender: 'Men',
         name: 'MENS SLEEVELESS SECOND SKIN',
         priceCents: 6000,
         colors: 2,
@@ -99,7 +99,7 @@ export let products = [{
     {
         id: 12,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'DOVE SHRUNKEN HOODIE',
         priceCents: 24000,
         colors: 2,
@@ -108,7 +108,7 @@ export let products = [{
     {
         id: 13,
         category: 'Tops',
-        gender: '',
+        gender: 'Women',
         name: 'WOMENS TANK TOP SECOND SKIN',
         priceCents: 6000,
         colors: 2,
@@ -117,7 +117,7 @@ export let products = [{
     {
         id: 14,
         category: 'Tops',
-        gender: '',
+        gender: 'Men',
         name: 'MENS LONG SLEEVE SECOND SKIN',
         priceCents: 8000,
         colors: 2,
@@ -126,7 +126,7 @@ export let products = [{
     {
         id: 15,
         category: 'Tops',
-        gender: '',
+        gender: 'Women',
         name: 'WOMENS SLEEVELESS SECOND SKIN',
         priceCents: 6000,
         colors: 2,
@@ -135,7 +135,7 @@ export let products = [{
     {
         id: 16,
         category: 'Tops',
-        gender: '',
+        gender: 'Women',
         name: 'WOMENS LONG SLEEVE SECOND SKIN',
         priceCents: 8000,
         colors: 2,
@@ -144,7 +144,7 @@ export let products = [{
     {
         id: 17,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'DOVE NO SEAM TEE',
         priceCents: 14000,
         colors: 4,
@@ -153,7 +153,7 @@ export let products = [{
     {
         id: 18,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'NO SEAM TEE',
         priceCents: 12000,
         colors: 1,
@@ -161,8 +161,8 @@ export let products = [{
     },
     {
         id: 19,
-        category: '',
-        gender: '',
+        category: 'Outerwear',
+        gender: 'Women',
         name: 'WOMENS LONG SLEEVE BODYSUIT',
         priceCents: 30000,
         colors: 1,
@@ -171,7 +171,7 @@ export let products = [{
     {
         id: 20,
         category: 'Tops',
-        gender: '',
+        gender: 'unisex',
         name: 'LOGO 3/4 SLEEVE TEE',
         priceCents: 12000,
         colors: 5,
@@ -179,8 +179,8 @@ export let products = [{
     },
     {
         id: 21,
-        category: '',
-        gender: '',
+        category: 'Outerwear',
+        gender: 'unisex',
         name: 'SATEEN OVERALLS',
         priceCents: 30000,
         colors: 1,
@@ -188,8 +188,8 @@ export let products = [{
     },
     {
         id: 22,
-        category: '',
-        gender: '',
+        category: 'Outerwear',
+        gender: 'unisex',
         name: 'T CUT PARKA',
         priceCents: 34000,
         colors: 1,
@@ -198,7 +198,7 @@ export let products = [{
     {
         id: 23,
         category: 'Accessories',
-        gender: '',
+        gender: 'unisex',
         name: 'LOGO CAP',
         priceCents: 60000,
         colors: 1,
@@ -206,8 +206,8 @@ export let products = [{
     },
     {
         id: 24,
-        category: '',
-        gender: '',
+        category: 'Outerwear',
+        gender: 'unisex',
         name: 'COATED COTTON LIGHT PARKA',
         priceCents: 30000,
         colors: 1,
@@ -216,7 +216,7 @@ export let products = [{
     {
         id: 25,
         category: 'Accessories',
-        gender: '',
+        gender: 'unisex',
         name: 'FOLDABLE CAP',
         priceCents: 6000,
         colors: 1,
@@ -225,7 +225,7 @@ export let products = [{
     {
         id: 26,
         category: 'Bottoms',
-        gender: '',
+        gender: 'Women',
         name: 'WOMENS LONG LEGGING',
         priceCents: 14000,
         colors: 1,
@@ -234,7 +234,7 @@ export let products = [{
     {
         id: 27,
         category: 'Bottoms',
-        gender: '',
+        gender: 'Men',
         name: 'MENS LONG JOHN',
         priceCents: 8000,
         colors: 1,
@@ -243,7 +243,7 @@ export let products = [{
     {
         id: 28,
         category: 'Accessories',
-        gender: '',
+        gender: 'unisex',
         name: 'FLAME CAP',
         priceCents: 8000,
         colors: 1,
