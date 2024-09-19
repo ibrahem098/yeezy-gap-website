@@ -1,6 +1,6 @@
 import {
     products
-} from "/proudcts.js"
+} from "proudcts.js"
 let html = ``,
     picCount = 0
 
