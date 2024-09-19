@@ -80,7 +80,7 @@ export let products = [{
     },
     {
         id: 10,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'LOGO LONGSLEEVE TEE',
         priceCents: 12000,
@@ -89,7 +89,7 @@ export let products = [{
     },
     {
         id: 11,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'MENS SLEEVELESS SECOND SKIN',
         priceCents: 6000,
@@ -98,7 +98,7 @@ export let products = [{
     },
     {
         id: 12,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'DOVE SHRUNKEN HOODIE',
         priceCents: 24000,
@@ -107,7 +107,7 @@ export let products = [{
     },
     {
         id: 13,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'WOMENS TANK TOP SECOND SKIN',
         priceCents: 6000,
@@ -116,7 +116,7 @@ export let products = [{
     },
     {
         id: 14,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'MENS LONG SLEEVE SECOND SKIN',
         priceCents: 8000,
@@ -125,7 +125,7 @@ export let products = [{
     },
     {
         id: 15,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'WOMENS SLEEVELESS SECOND SKIN',
         priceCents: 6000,
@@ -134,7 +134,7 @@ export let products = [{
     },
     {
         id: 16,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'WOMENS LONG SLEEVE SECOND SKIN',
         priceCents: 8000,
@@ -143,7 +143,7 @@ export let products = [{
     },
     {
         id: 17,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'DOVE NO SEAM TEE',
         priceCents: 14000,
@@ -152,7 +152,7 @@ export let products = [{
     },
     {
         id: 18,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'NO SEAM TEE',
         priceCents: 12000,
@@ -170,7 +170,7 @@ export let products = [{
     },
     {
         id: 20,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'LOGO 3/4 SLEEVE TEE',
         priceCents: 12000,
