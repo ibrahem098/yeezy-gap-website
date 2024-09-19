@@ -1,8 +1,9 @@
 import {
     products
-} from "proudcts.js"
+} from "/proudcts.js"
 let html = ``,
     picCount = 0
+console.log('yes');
 
 function generateHeaderImg() {
     let heroimgNum;

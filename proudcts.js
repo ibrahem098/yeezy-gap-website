@@ -26,7 +26,7 @@ export let products = [{
     },
     {
         id: 4,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'DOVE HOODIE',
         priceCents: 24000,
@@ -35,7 +35,7 @@ export let products = [{
     },
     {
         id: 5,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'DOVE LONGSLEEVE TEE',
         priceCents: 14000,
@@ -44,7 +44,7 @@ export let products = [{
     },
     {
         id: 6,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'LOOSE TANK TOP',
         priceCents: 8000,
@@ -53,7 +53,7 @@ export let products = [{
     },
     {
         id: 7,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'DOVE 3/4 SLEEVE TEE',
         priceCents: 14000,
@@ -71,7 +71,7 @@ export let products = [{
     },
     {
         id: 9,
-        category: '',
+        category: 'Tops',
         gender: '',
         name: 'LOGO NO SEAM TEE',
         priceCents: 12000,
@@ -215,7 +215,7 @@ export let products = [{
     },
     {
         id: 25,
-        category: '',
+        category: 'Accessories',
         gender: '',
         name: 'FOLDABLE CAP',
         priceCents: 6000,
@@ -242,7 +242,7 @@ export let products = [{
     },
     {
         id: 28,
-        category: '',
+        category: 'Accessories',
         gender: '',
         name: 'FLAME CAP',
         priceCents: 8000,
