@@ -1,10 +1,6 @@
-* {
-    font-family: 'SF Pro', Helvetica, Arial, sans-serif;
-
-}
-
 body {
     overflow-x: hidden;
+    font-family: 'SF Pro', Helvetica, Arial, sans-serif;
 }
 
 .headimg {
@@ -14,18 +10,10 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    text-align: right;
     padding-bottom: 7.5%;
 }
 
-.us {
-    width: 15px;
-    height: 15;
-    margin-right: -460px;
-}
-
 a {
-    font-family: SF Pro, Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: rgb(0, 0, 0);
@@ -33,35 +21,25 @@ a {
     text-transform: uppercase;
 }
 
-.nav {
+.navH {
     position: fixed;
-    width: 100%;
+    left: 75%;
+    top: 6%;
+    display: flex;
+    gap: 90px;
 }
 
-.nav1 {
-    padding-top: 41px;
-    display: inline-block;
-    padding-right: 11.7%;
-    position: absolute;
+.navH img {
+    width: 15px;
 }
 
-.search {
-    padding-right: 68px;
-    padding-left: 68px;
-    ;
-}
-
-.nav2 a {
-    padding-top: 41px;
-    display: block;
-    text-align: left;
-    padding-left: 45px;
-}
-
-.unisex,
-.men,
-.women {
-    margin-top: -36px;
+.navV {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 15%;
+    left: 3%;
 }
 
 .productsGrid {
@@ -69,21 +47,21 @@ a {
     padding: 100px 150px 0px 150px;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 }
-
-/* .productsGrid {
-    display: flex;
-    padding: 0px 150px;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    overflow-y: scroll;
-    scrollbar-width: none; 
-    }*/
-
 
 .product {
     padding-bottom: 70px;
     width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    margin-bottom: 35px;
 }
 
 .p_name,
@@ -94,10 +72,10 @@ a {
     font-weight: 700;
 }
 
-
 .p_color {
     opacity: .35;
     font-size: 12px;
+    margin-top: -5px;
 }
 
 .p_price {
@@ -105,35 +83,23 @@ a {
 }
 
 .footer {
-    padding-top: 90px;
-    padding-bottom: 150px;
-    text-align: center;
-    line-height: 1;
-
+    padding: 90px 0px 120px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.b_link {
-    display: inline;
-    font-family: "SF Pro", Helvetica, Arial, sans-serif;
+.footer div {
+    display: flex;
     font-weight: 600;
     font-size: 14px;
-    cursor: pointer;
-    margin: 10px;
+    gap: 20px;
 }
 
 .copy {
     display: inline;
-    font-family: "SF Pro", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
     margin: 10px;
-}
-
-.pic {
-    width: 370px;
-    height: 370px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    margin-bottom: 35px;
 }
