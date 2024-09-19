@@ -43,6 +43,22 @@ a {
     left: 3%;
 }
 
+.gridIcon {
+    display: grid;
+    grid-template-columns: 6px 6px;
+    row-gap: 1px;
+}
+
+.gridIcon div {
+    width: 6px;
+    height: 6px;
+    background-color: black;
+}
+
+.gridGap {
+    column-gap: 1px;
+}
+
 .productsGrid {
     display: flex;
     padding: 100px 150px 0px 150px;
@@ -128,19 +144,19 @@ a {
     margin: 10px;
 }
 
-
-.gridIcon {
-    display: grid;
-    grid-template-columns: 6px 6px;
-    row-gap: 1px;
+.unisexCats,
+.womenCats,
+.menCats {
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    opacity: .3;
+    display: flex;
+    flex-direction: column;
 }
 
-.gridIcon div {
-    width: 6px;
-    height: 6px;
-    background-color: black;
-}
-
-.gridGap {
-    column-gap: 1px;
+.hidden {
+    display: none;
 }

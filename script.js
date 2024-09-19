@@ -32,14 +32,11 @@ function generateProducts() {
         document.querySelector('.productsGrid').innerHTML = html
     })
 }
-
-
 generateHeaderImg()
 generateProducts()
 
 let scrollViewToggel = document.querySelector('.gridIcon');
 let grid = document.getElementById('productsGrid');
-
 scrollViewToggel.addEventListener('click', () => {
     document.querySelectorAll('.pic').forEach((pic) => {
         pic.classList.toggle("pic");
@@ -49,3 +46,13 @@ scrollViewToggel.addEventListener('click', () => {
     grid.classList.toggle("productsGrid");
     grid.classList.toggle("productsGridScroll");
 });
+
+document.querySelector('.unisex').addEventListener('click', () => {
+    document.querySelector('.unisexCats').classList.toggle('hidden')
+})
+document.querySelector('.men').addEventListener('click', () => {
+    document.querySelector('.menCats').classList.toggle('hidden')
+})
+document.querySelector('.women').addEventListener('click', () => {
+    document.querySelector('.womenCats').classList.toggle('hidden')
+})
