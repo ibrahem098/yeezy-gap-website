@@ -8,7 +8,7 @@ export let products = [{
         pic: 'pic1'
     }, {
         id: 2,
-        category: '',
+        category: 'Accessories',
         gender: '',
         name: 'KEYCHAIN',
         priceCents: 4000,
@@ -62,7 +62,7 @@ export let products = [{
     },
     {
         id: 8,
-        category: '',
+        category: 'Accessories',
         gender: '',
         name: 'SNAKE BAG',
         priceCents: 14000,
@@ -197,7 +197,7 @@ export let products = [{
     },
     {
         id: 23,
-        category: '',
+        category: 'Accessories',
         gender: '',
         name: 'LOGO CAP',
         priceCents: 60000,
