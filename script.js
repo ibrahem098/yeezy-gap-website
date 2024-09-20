@@ -44,7 +44,6 @@ function generateProducts(array) {
             productPriceCents = product.priceCents,
             productcolors = product.colors,
             productpic = product.pic
-
         html += `
         <div class="product">
         <img id="pic" class="pic" src="./media/items/${productpic}a.jpg" onmouseover="this.src='./media/items/${productpic}b.jpg'" onmouseout="this.src='./media/items/${productpic}a.jpg'">
@@ -53,21 +52,46 @@ function generateProducts(array) {
         <p class="p_color">${productcolors} COLORS</p>
         </div>
         `;
-        document.querySelector('.productsGrid').innerHTML = html
+        document.querySelector('.productsGrid').innerHTML = html;
+    })
+}
+let Content = [];
+
+function getContent(elemntClass, gender, category) {
+    document.querySelector(elemntClass).addEventListener('click', () => {
+        Content = [];
+        html = ``;
+        products.forEach((product) => {
+            if (category === 'All' &&
+                (product.gender === gender ||
+                    product.gender === 'unisex')) {
+                Content.push(product)
+            } else if ((gender === 'Men' || gender === 'Women') &&
+                (product.gender === 'unisex') &&
+                category === product.category) {
+                Content.push(product)
+            } else if (product.gender === gender &&
+                product.category === category) {
+                Content.push(product)
+            }
+        })
+        generateProducts(Content)
     })
 }
 generateHeaderImg()
 generateProducts(products)
-let onscreenProducts = [];
-
-document.querySelector('.uAll').addEventListener('click', () => {
-    products.forEach((product) => {
-        if (product.gender === 'unisex') {
-            console.log(product.name);
-            onscreenProducts.push(product)
-            console.log(onscreenProducts);
-        }
-    })
-    document.querySelector('.productsGrid').innerHTML = ``
-    generateProducts(onscreenProducts)
-})
+getContent('.uAll', 'unisex', 'All')
+getContent('.uTops', 'unisex', 'Tops')
+getContent('.uBottoms', 'unisex', 'Bottoms')
+getContent('.uOuterwear', 'unisex', 'Outerwear')
+getContent('.uAccessories', 'unisex', 'Accessories')
+getContent('.mAll', 'Men', 'All')
+getContent('.mTops', 'Men', 'Tops')
+getContent('.mBottoms', 'Men', 'Bottoms')
+getContent('.mOuterwear', 'Men', 'Outerwear')
+getContent('.mAccessories', 'Men', 'Accessories')
+getContent('.wAll', 'Women', 'All')
+getContent('.wTops', 'Women', 'Tops')
+getContent('.wBottoms', 'Women', 'Bottoms')
+getContent('.wOuterwear', 'Women', 'Outerwear')
+getContent('.wAccessories', 'Women', 'Accessories')
