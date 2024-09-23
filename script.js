@@ -1,6 +1,9 @@
 import {
     products
 } from "./proudcts.js"
+import {
+    cart
+} from "./cart.js"
 let html = ``,
     picCount = 0
 
@@ -43,9 +46,10 @@ function generateProducts(array) {
         let productName = product.name,
             productPriceCents = product.priceCents,
             productcolors = product.colors,
-            productpic = product.pic
+            productpic = product.pic,
+            productid = product.id
         html += `
-        <div class="product">
+        <div class="product" data-id=${productid}>
         <img id="pic" class="pic" src="./media/items/${productpic}a.jpg" onmouseover="this.src='./media/items/${productpic}b.jpg'" onmouseout="this.src='./media/items/${productpic}a.jpg'">
         <p class="p_name">${productName}</p>
         <p class="p_price">$${productPriceCents/100}</p>
@@ -95,3 +99,16 @@ getContent('.wTops', 'Women', 'Tops')
 getContent('.wBottoms', 'Women', 'Bottoms')
 getContent('.wOuterwear', 'Women', 'Outerwear')
 getContent('.wAccessories', 'Women', 'Accessories')
+let matchingProduct = '';
+document.querySelectorAll(".product").forEach((product) => {
+    product.addEventListener('click', () => {
+        products.forEach((arrayProduct) => {
+            if (arrayProduct.id === product.datalist[0]) {
+                matchingProduct = product
+                console.log('yes');
+                console.log(matchingProduct);
+
+            }
+        })
+    })
+})
