@@ -39,8 +39,6 @@ document.querySelector('.women').addEventListener('click', () => {
     document.querySelector('.womenCats').classList.toggle('hidden')
 })
 
-
-
 function generateProducts(array) {
     array.forEach((product) => {
         let productName = product.name,
@@ -107,6 +105,7 @@ document.querySelectorAll(".product").forEach((product) => {
                 matchingProduct = product
                 console.log('yes');
                 console.log(matchingProduct);
+                console.log(product);
 
             }
         })
