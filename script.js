@@ -2,29 +2,12 @@ import {
     products
 } from "/proudcts.js";
 import {
-    cart
+    cart,
+    getLocalStorage,
+    saveToLocalStorage
 } from "/cart.js";
 
-// Set the initial value of 'cart' if it exists in localStorage
-let savedCart = JSON.parse(localStorage.getItem('cart'));
-
-if (savedCart) {
-    // Clear the existing cart array and populate it with the saved cart
-    cart.length = 0; // This clears the cart array
-    cart.push(...savedCart); // Spread the savedCart into the cart array
-}
-let html = ``,
-    picCount = 0;
-
-function generateHeaderImg() {
-    let heroimgNum;
-    heroimgNum = Math.round(Math.random() * 16)
-    if (heroimgNum < 1) {
-        heroimgNum++
-    }
-    document.querySelector('.headimg').style.backgroundImage = `url('./media/heroimg/hero${heroimgNum}.jpg')`;
-}
-
+getLocalStorage()
 
 let scrollViewToggel = document.querySelector('.gridIcon');
 let grid = document.getElementById('productsGrid');
@@ -47,6 +30,18 @@ document.querySelector('.men').addEventListener('click', () => {
 document.querySelector('.women').addEventListener('click', () => {
     document.querySelector('.womenCats').classList.toggle('hidden')
 })
+
+function generateHeaderImg() {
+    let heroimgNum;
+    heroimgNum = Math.round(Math.random() * 16)
+    if (heroimgNum < 1) {
+        heroimgNum++
+    }
+    document.querySelector('.headimg').style.backgroundImage = `url('./media/heroimg/hero${heroimgNum}.jpg')`;
+}
+
+let html = ``,
+    picCount = 0;
 
 function generateProducts(array) {
     array.forEach((product) => {
@@ -106,35 +101,23 @@ getContent('.wTops', 'Women', 'Tops')
 getContent('.wBottoms', 'Women', 'Bottoms')
 getContent('.wOuterwear', 'Women', 'Outerwear')
 getContent('.wAccessories', 'Women', 'Accessories')
-// let matchingProduct = '';
-// document.querySelectorAll(".product").forEach((product) => {
-//     product.addEventListener('click', () => {
-//         products.forEach((brandProduct) => {
-//             if (brandProduct.id === product.dataset.id) {
-//                 matchingProduct = product
-//                 console.log(matchingProduct);
-//             } else {
-//                 console.log('no');
 
-//             }
-//         })
-//     })
-// })
 
-let matchingProduct = '';
+document.querySelectorAll('.product').forEach((productElemnt) => {
+    productElemnt.addEventListener('click', () => {
+        let productElemntId = Number(productElemnt.dataset.id)
+        addToCart(productElemntId)
+    })
+})
 
-function addToCart(matchingProduct) {
-    cart.push(matchingProduct)
+function addToCart(productElemntId) {
+    let matchingProduct = ``;
+    products.forEach((product) => {
+        if (product.id === productElemntId) {
+            matchingProduct = product
+            cart.push(matchingProduct)
+            console.log(cart);
+            saveToLocalStorage(cart)
+        }
+    })
 }
-document.querySelectorAll(".product").forEach((product) => {
-    product.addEventListener('click', () => {
-        products.some((brandProduct) => {
-            if (brandProduct.id === Number(product.dataset.id)) {
-                matchingProduct = brandProduct;
-                addToCart(matchingProduct)
-                console.log(cart);
-                return true;
-            }
-        });
-    });
-});
