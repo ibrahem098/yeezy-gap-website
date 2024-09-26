@@ -1,11 +1,20 @@
 import {
     products
-} from "./proudcts.js"
+} from "/proudcts.js";
 import {
     cart
-} from "./cart.js"
+} from "/cart.js";
+
+// Set the initial value of 'cart' if it exists in localStorage
+let savedCart = JSON.parse(localStorage.getItem('cart'));
+
+if (savedCart) {
+    // Clear the existing cart array and populate it with the saved cart
+    cart.length = 0; // This clears the cart array
+    cart.push(...savedCart); // Spread the savedCart into the cart array
+}
 let html = ``,
-    picCount = 0
+    picCount = 0;
 
 function generateHeaderImg() {
     let heroimgNum;
@@ -97,17 +106,35 @@ getContent('.wTops', 'Women', 'Tops')
 getContent('.wBottoms', 'Women', 'Bottoms')
 getContent('.wOuterwear', 'Women', 'Outerwear')
 getContent('.wAccessories', 'Women', 'Accessories')
+// let matchingProduct = '';
+// document.querySelectorAll(".product").forEach((product) => {
+//     product.addEventListener('click', () => {
+//         products.forEach((brandProduct) => {
+//             if (brandProduct.id === product.dataset.id) {
+//                 matchingProduct = product
+//                 console.log(matchingProduct);
+//             } else {
+//                 console.log('no');
+
+//             }
+//         })
+//     })
+// })
+
 let matchingProduct = '';
+
+function addToCart(matchingProduct) {
+    cart.push(matchingProduct)
+}
 document.querySelectorAll(".product").forEach((product) => {
     product.addEventListener('click', () => {
-        products.forEach((arrayProduct) => {
-            if (arrayProduct.id === product.datalist[0]) {
-                matchingProduct = product
-                console.log('yes');
-                console.log(matchingProduct);
-                console.log(product);
-
+        products.some((brandProduct) => {
+            if (brandProduct.id === Number(product.dataset.id)) {
+                matchingProduct = brandProduct;
+                addToCart(matchingProduct)
+                console.log(cart);
+                return true;
             }
-        })
-    })
-})
+        });
+    });
+});
