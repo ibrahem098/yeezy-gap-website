@@ -1,12 +1,12 @@
 import {
     products
-} from "./proudcts.js";
+} from './proudcts.js';
 import {
     cart,
     getLocalStorage,
     saveToLocalStorage,
     addToCart
-} from "./cart.js";
+} from './cart.js';
 
 getLocalStorage()
 

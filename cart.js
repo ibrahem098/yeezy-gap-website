@@ -131,8 +131,6 @@ export function addToCart(productElemntId) {
     updateCartQuantity(cart)
 
 }
-
-
 updateCartQuantity()
 
 function updateCartQuantity() {
@@ -146,7 +144,6 @@ function updateCartQuantity() {
         cartItemsQuantityElemnt.innerHTML = `CART (${cartItemsQuantity})`
     }
 }
-
 
 function addQuntityEventListeners(elemntClass) {
     document.querySelectorAll(`.${elemntClass}`).forEach((button) => {
