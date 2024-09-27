@@ -19,13 +19,15 @@ body {
     padding-bottom: 7.5%;
 }
 
-a {
+a,
+.home {
     font-weight: 700;
     font-size: 14px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
 }
+
 
 .navH {
     position: fixed;
@@ -68,14 +70,18 @@ a {
     justify-content: space-around;
 }
 
+.more,
+.less {
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 
 .titleBar {
     font-size: 20px;
-    display: flex;
-    justify-content: left;
     padding: 100px;
-    align-items: center;
     font-weight: 600;
 }
 
@@ -115,6 +121,35 @@ a {
 .order,
 .summary {
     padding: 40px;
+    min-height: 40vh;
+}
+
+.summaryLine {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px;
+}
+
+.summaryLine p {
+    margin: 0px;
+}
+
+.summaryLines {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin-top: 40px;
+    font-size: larger;
+    font-style: italic;
 }
 
 .order {

@@ -5,7 +5,8 @@ export let products = [{
         name: 'SATEEN CARGO PANT',
         priceCents: 22000,
         colors: 2,
-        pic: 'pic1'
+        pic: 'pic1',
+        quantity: 1
     }, {
         id: 2,
         category: 'Accessories',
@@ -13,7 +14,8 @@ export let products = [{
         name: 'KEYCHAIN',
         priceCents: 4000,
         colors: 1,
-        pic: 'pic2'
+        pic: 'pic2',
+        quantity: 1
     },
     {
         id: 3,
@@ -22,7 +24,8 @@ export let products = [{
         name: 'SATEEN ANORAK',
         priceCents: 26000,
         colors: 2,
-        pic: 'pic3'
+        pic: 'pic3',
+        quantity: 1
     },
     {
         id: 4,
@@ -31,7 +34,8 @@ export let products = [{
         name: 'DOVE HOODIE',
         priceCents: 24000,
         colors: 5,
-        pic: 'pic4'
+        pic: 'pic4',
+        quantity: 1
     },
     {
         id: 5,
@@ -40,7 +44,8 @@ export let products = [{
         name: 'DOVE LONGSLEEVE TEE',
         priceCents: 14000,
         colors: 5,
-        pic: 'pic5'
+        pic: 'pic5',
+        quantity: 1
     },
     {
         id: 6,
@@ -49,7 +54,8 @@ export let products = [{
         name: 'LOOSE TANK TOP',
         priceCents: 8000,
         colors: 2,
-        pic: 'pic6'
+        pic: 'pic6',
+        quantity: 1
     },
     {
         id: 7,
@@ -58,7 +64,8 @@ export let products = [{
         name: 'DOVE 3/4 SLEEVE TEE',
         priceCents: 14000,
         colors: 5,
-        pic: 'pic7'
+        pic: 'pic7',
+        quantity: 1
     },
     {
         id: 8,
@@ -67,7 +74,8 @@ export let products = [{
         name: 'SNAKE BAG',
         priceCents: 14000,
         colors: 1,
-        pic: 'pic8'
+        pic: 'pic8',
+        quantity: 1
     },
     {
         id: 9,
@@ -76,7 +84,8 @@ export let products = [{
         name: 'LOGO NO SEAM TEE',
         priceCents: 12000,
         colors: 3,
-        pic: 'pic9'
+        pic: 'pic9',
+        quantity: 1
     },
     {
         id: 10,
@@ -85,7 +94,8 @@ export let products = [{
         name: 'LOGO LONGSLEEVE TEE',
         priceCents: 12000,
         colors: 4,
-        pic: 'pic10'
+        pic: 'pic10',
+        quantity: 1
     },
     {
         id: 11,
@@ -94,7 +104,8 @@ export let products = [{
         name: 'MENS SLEEVELESS SECOND SKIN',
         priceCents: 6000,
         colors: 2,
-        pic: 'pic11'
+        pic: 'pic11',
+        quantity: 1
     },
     {
         id: 12,
@@ -103,7 +114,8 @@ export let products = [{
         name: 'DOVE SHRUNKEN HOODIE',
         priceCents: 24000,
         colors: 2,
-        pic: 'pic12'
+        pic: 'pic12',
+        quantity: 1
     },
     {
         id: 13,
@@ -112,7 +124,8 @@ export let products = [{
         name: 'WOMENS TANK TOP SECOND SKIN',
         priceCents: 6000,
         colors: 2,
-        pic: 'pic13'
+        pic: 'pic13',
+        quantity: 1
     },
     {
         id: 14,
@@ -121,7 +134,8 @@ export let products = [{
         name: 'MENS LONG SLEEVE SECOND SKIN',
         priceCents: 8000,
         colors: 2,
-        pic: 'pic14'
+        pic: 'pic14',
+        quantity: 1
     },
     {
         id: 15,
@@ -130,7 +144,8 @@ export let products = [{
         name: 'WOMENS SLEEVELESS SECOND SKIN',
         priceCents: 6000,
         colors: 2,
-        pic: 'pic15'
+        pic: 'pic15',
+        quantity: 1
     },
     {
         id: 16,
@@ -139,7 +154,8 @@ export let products = [{
         name: 'WOMENS LONG SLEEVE SECOND SKIN',
         priceCents: 8000,
         colors: 2,
-        pic: 'pic16'
+        pic: 'pic16',
+        quantity: 1
     },
     {
         id: 17,
@@ -148,7 +164,8 @@ export let products = [{
         name: 'DOVE NO SEAM TEE',
         priceCents: 14000,
         colors: 4,
-        pic: 'pic17'
+        pic: 'pic17',
+        quantity: 1
     },
     {
         id: 18,
@@ -157,7 +174,8 @@ export let products = [{
         name: 'NO SEAM TEE',
         priceCents: 12000,
         colors: 1,
-        pic: 'pic18'
+        pic: 'pic18',
+        quantity: 1
     },
     {
         id: 19,
@@ -166,7 +184,8 @@ export let products = [{
         name: 'WOMENS LONG SLEEVE BODYSUIT',
         priceCents: 30000,
         colors: 1,
-        pic: 'pic19'
+        pic: 'pic19',
+        quantity: 1
     },
     {
         id: 20,
@@ -175,16 +194,17 @@ export let products = [{
         name: 'LOGO 3/4 SLEEVE TEE',
         priceCents: 12000,
         colors: 5,
-        pic: 'pic20'
-    },
-    {
+        pic: 'pic20',
+        quantity: 1
+    }, {
         id: 21,
         category: 'Outerwear',
         gender: 'unisex',
         name: 'SATEEN OVERALLS',
         priceCents: 30000,
         colors: 1,
-        pic: 'pic21'
+        pic: 'pic21',
+        quantity: 1
     },
     {
         id: 22,
@@ -193,7 +213,8 @@ export let products = [{
         name: 'T CUT PARKA',
         priceCents: 34000,
         colors: 1,
-        pic: 'pic22'
+        pic: 'pic22',
+        quantity: 1
     },
     {
         id: 23,
@@ -202,7 +223,8 @@ export let products = [{
         name: 'LOGO CAP',
         priceCents: 60000,
         colors: 1,
-        pic: 'pic23'
+        pic: 'pic23',
+        quantity: 1
     },
     {
         id: 24,
@@ -211,7 +233,8 @@ export let products = [{
         name: 'COATED COTTON LIGHT PARKA',
         priceCents: 30000,
         colors: 1,
-        pic: 'pic24'
+        pic: 'pic24',
+        quantity: 1
     },
     {
         id: 25,
@@ -220,7 +243,8 @@ export let products = [{
         name: 'FOLDABLE CAP',
         priceCents: 6000,
         colors: 1,
-        pic: 'pic25'
+        pic: 'pic25',
+        quantity: 1
     },
     {
         id: 26,
@@ -229,7 +253,8 @@ export let products = [{
         name: 'WOMENS LONG LEGGING',
         priceCents: 14000,
         colors: 1,
-        pic: 'pic26'
+        pic: 'pic26',
+        quantity: 1
     },
     {
         id: 27,
@@ -238,7 +263,8 @@ export let products = [{
         name: 'MENS LONG JOHN',
         priceCents: 8000,
         colors: 1,
-        pic: 'pic27'
+        pic: 'pic27',
+        quantity: 1
     },
     {
         id: 28,
@@ -247,6 +273,7 @@ export let products = [{
         name: 'FLAME CAP',
         priceCents: 8000,
         colors: 1,
-        pic: 'pic28'
+        pic: 'pic28',
+        quantity: 1
     }
 ];

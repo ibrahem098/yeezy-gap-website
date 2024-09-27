@@ -4,7 +4,8 @@ import {
 import {
     cart,
     getLocalStorage,
-    saveToLocalStorage
+    saveToLocalStorage,
+    addToCart
 } from "/cart.js";
 
 getLocalStorage()
@@ -109,15 +110,3 @@ document.querySelectorAll('.product').forEach((productElemnt) => {
         addToCart(productElemntId)
     })
 })
-
-function addToCart(productElemntId) {
-    let matchingProduct = ``;
-    products.forEach((product) => {
-        if (product.id === productElemntId) {
-            matchingProduct = product
-            cart.push(matchingProduct)
-            console.log(cart);
-            saveToLocalStorage(cart)
-        }
-    })
-}
