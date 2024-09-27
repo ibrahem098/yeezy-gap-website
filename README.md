@@ -1,4 +1,5 @@
 # Yeezy Gap Website
+![Yeezy Gap](./media/heroimg/hero12.jpg)
 A mirrored version of the Yeezy Gap collaboration website, showcasing products in a responsive design.
 
 - **Product Display**: Interactive product grid with hover effects and dynamic filtering.
