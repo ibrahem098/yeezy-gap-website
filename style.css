@@ -91,6 +91,7 @@ a,
     height: 150px;
     width: 100%;
     gap: 40px;
+    align-items: center;
 }
 
 .c_pic {
@@ -99,7 +100,8 @@ a,
 }
 
 .c_name,
-.c_price {
+.c_price,
+.c_cat {
     display: block;
     margin: 0px;
 }
@@ -122,6 +124,16 @@ a,
 .summary {
     padding: 40px;
     min-height: 40vh;
+}
+
+.order {
+    flex-shrink: 4;
+    flex-grow: 1;
+}
+
+.summary {
+    flex-shrink: 1;
+    flex-grow: 0;
 }
 
 .summaryLine {
@@ -250,4 +262,12 @@ button {
 
 .hidden {
     display: none;
+}
+
+.c_cat {
+    font-size: 14px;
+}
+
+h4 {
+    margin: 0px;
 }

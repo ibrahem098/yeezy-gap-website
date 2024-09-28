@@ -42,9 +42,9 @@ function generateCartList(array) {
                     </div>
                     <div class="cartItemInfo">
                     <p class="c_name">${cartItem.name}</p>
+                    <p class="c_cat">${(cartItem.gender)}.${cartItem.category}</p>
                     <p class="c_price">$${(cartItem.priceCents / 100).toFixed(2)}</p>
                     <p class="c_quantity">Quantity: ${cartItem.quantity} <a class="more" data-id=${cartItem.id}>+</a><a class="less" data-id=${cartItem.id}>-</a></p>
-    
                     </div>
                 </div>
             `;
